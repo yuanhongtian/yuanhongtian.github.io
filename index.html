@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173c8f">
+  <meta name="description" content="Yuanhong Tian — integrable systems, nonlinear partial differential equations, perturbation theory, and long-time asymptotics.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yuanhong Tian · Mathematics">
+  <meta property="og:description" content="Research on perturbed nonlinear Schrödinger and modified KdV equations, in collaboration with Gong Chen and Jiaqi Liu.">
+  <meta property="og:url" content="https://yuanhongtian.github.io/">
+  <link rel="canonical" href="https://yuanhongtian.github.io/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23173c8f'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='35' fill='white'%3ET%3C/text%3E%3C/svg%3E">
+  <title>Yuanhong Tian · Mathematics</title>
+  <style>
+    :root{--ink:#16253b;--muted:#5c6879;--blue:#173c8f;--line:#dce2eb;--paper:#fff;--tint:#f2f5fb;--serif:Georgia,"Times New Roman","Noto Serif CJK SC","Songti SC",SimSun,serif;--sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.85 var(--sans);-webkit-font-smoothing:antialiased}a{color:var(--blue);text-underline-offset:5px;text-decoration-thickness:1px}a:hover{text-decoration:underline}a:focus-visible,summary:focus-visible{outline:3px solid #718ec9;outline-offset:6px}::selection{color:var(--ink);background:#dbe7ff}.wrap{max-width:1160px;margin:0 auto;padding:0 44px}.skip{position:fixed;z-index:10;top:8px;left:8px;padding:8px 16px;background:#fff;transform:translateY(-150%)}.skip:focus{transform:translateY(0)}
+    .site-header{border-bottom:1px solid var(--line)}.header-inner{min-height:90px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{display:flex;align-items:center;gap:14px;color:var(--ink);text-decoration:none}.brand-mark{font:italic 1.7rem var(--serif);color:var(--blue);border-right:1px solid var(--line);padding-right:18px}.brand-name{font-size:.93rem;font-weight:600;letter-spacing:.02em}nav{display:flex;align-items:center;gap:30px}nav a{color:var(--muted);font-size:.9rem;text-decoration:none}nav a:hover{color:var(--blue)}.external-arrow{margin-left:4px;font-size:.95em}
+    .intro{display:grid;grid-template-columns:minmax(0,1fr) 238px;gap:80px;padding:86px 0 78px;border-bottom:1px solid var(--line)}.eyebrow{color:var(--blue);font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;margin:0 0 17px}h1{font:normal clamp(2.7rem,5.7vw,4.75rem)/1.08 var(--serif);letter-spacing:-.055em;margin:0 0 26px}h1 span{display:block}h1 .surname{color:var(--blue)}.intro-description{max-width:650px;margin:0;font-size:1.04rem;color:#465369;line-height:1.95}.intro-description em{font-style:normal;color:var(--ink)}.intro-aside{align-self:end;border-top:3px solid var(--blue);padding-top:20px;padding-bottom:4px}.aside-label{font-size:.78rem;letter-spacing:.08em;color:var(--muted);margin:0 0 13px}.topic-line{font-family:var(--serif);font-size:1.23rem;line-height:1.55;margin:0 0 8px}.aside-link{display:inline-block;margin-top:19px;font-size:.88rem;text-decoration:none;border-bottom:1px solid #bbc7de}.intro-footnote{font-size:.85rem;color:var(--muted);margin:22px 0 0}
+    .section{display:grid;grid-template-columns:205px minmax(0,1fr);gap:42px;padding:58px 0;border-bottom:1px solid var(--line);scroll-margin-top:20px}.section-head .number{color:#6c7c93;font-size:.78rem;letter-spacing:.12em}.section-head h2{font-size:1.32rem;font-weight:500;margin:8px 0 0;letter-spacing:.02em}.section-head .en{display:block;font-family:var(--serif);font-size:.98rem;color:var(--muted);margin-top:5px}.section-body>p:first-child{margin-top:0}.section-body>p:last-child{margin-bottom:0}.lead{font-size:1.02rem;line-height:1.95;margin:0;color:#465369}.research-item{padding:0 0 28px;margin-bottom:28px;border-bottom:1px solid var(--line)}.research-item:last-child{padding:0;margin:0;border:0}.item-label{font-size:.77rem;color:var(--blue);letter-spacing:.08em;margin:0 0 8px}.research-item h3{font-size:1.18rem;font-weight:550;margin:0 0 13px;line-height:1.6}.research-item p{margin:0;color:#465369;font-size:.98rem}.research-item .paper-jump{display:inline-block;font-size:.86rem;margin-top:12px;text-decoration:none}.research-item .paper-jump:hover{text-decoration:underline}.method-note{margin-top:31px;background:var(--tint);padding:21px 25px;border-left:3px solid var(--blue);font-size:.94rem;color:#445168}.method-note strong{font-weight:600;color:var(--ink)}
+    .pub-intro{margin:0 0 32px;color:var(--muted);font-size:.92rem}.publication{display:grid;grid-template-columns:54px minmax(0,1fr);gap:20px;padding-bottom:35px;margin-bottom:34px;border-bottom:1px solid var(--line);scroll-margin-top:34px}.publication:last-child{margin:0;padding:0;border:0}.pub-year{font-family:var(--serif);font-size:1.06rem;color:var(--blue);padding-top:3px}.pub-title{font:normal 1.42rem/1.4 var(--serif);margin:0 0 12px;letter-spacing:-.015em}.pub-title a{color:var(--ink);text-decoration:none}.pub-title a:hover{color:var(--blue);text-decoration:underline}.authors{font-size:.9rem;margin:0 0 4px;color:#526078}.authors strong{font-weight:600;color:var(--ink)}.journal{font-size:.89rem;margin:0;color:var(--muted)}.journal cite{font-style:italic}.pub-links{display:flex;gap:20px;flex-wrap:wrap;margin-top:16px}.pub-links a{font-size:.85rem;text-decoration:none;border-bottom:1px solid #b5c3dd}.pub-links a:hover{border-color:var(--blue)}
+    .contact-row{display:flex;justify-content:space-between;gap:25px;align-items:start}.contact-row p{margin:0;color:var(--muted);font-size:.97rem}.github-link{white-space:nowrap;font-size:.94rem;text-decoration:none}.site-footer{display:flex;justify-content:space-between;gap:24px;padding:31px 0 36px;color:#68758a;font-size:.8rem}.site-footer p{margin:0}.site-footer a{color:inherit;text-decoration:none}.site-footer a:hover{color:var(--blue)}
+    .education-item{display:grid;grid-template-columns:175px minmax(0,1fr);gap:24px;padding-bottom:26px;margin-bottom:26px;border-bottom:1px solid var(--line)}.education-item:last-child{padding:0;margin:0;border:0}.education-dates{font-size:.88rem;color:var(--muted);padding-top:2px}.education-item h3{font-size:1.08rem;font-weight:550;margin:0 0 3px;line-height:1.6}.education-item p{font-size:.97rem;margin:0;color:#465369}.education-item .supervisor{font-size:.87rem;color:var(--muted);margin-top:5px}
+    @media(max-width:700px){.education-item{grid-template-columns:1fr;gap:5px}}
+    @media(min-width:1000px){h1 span{display:inline}h1 .surname{margin-left:.08em}}
+    @media(max-width:800px){.wrap{padding:0 28px}.header-inner{min-height:78px}nav{gap:20px}.intro{gap:35px;padding:60px 0;grid-template-columns:minmax(0,1fr) 190px}.section{grid-template-columns:155px minmax(0,1fr);gap:26px;padding:43px 0}.topic-line{font-size:1.05rem}.intro-description{font-size:1rem}.pub-title{font-size:1.25rem}}
+    @media(max-width:700px){html{scroll-padding-top:24px}.wrap{padding:0 22px}.header-inner{padding:17px 22px;min-height:0;flex-wrap:wrap;gap:13px}.brand-mark{font-size:1.45rem;padding-right:12px}.brand-name{font-size:.88rem}nav{width:100%;justify-content:space-between;gap:12px}nav a{font-size:.86rem;min-height:38px;display:flex;align-items:center}.intro{grid-template-columns:1fr;gap:32px;padding:46px 0 40px}h1{font-size:3.25rem;letter-spacing:-.045em;margin-bottom:23px}h1 span{display:inline}h1 .surname{margin-left:.08em}.eyebrow{font-size:.72rem;letter-spacing:.1em}.intro-aside{border-top:1px solid var(--line);padding:21px 0 0}.aside-label{margin:0 0 8px}.topic-line{font-size:1.04rem;display:inline;margin-right:16px}.aside-link{display:block;width:fit-content;margin-top:10px}.section{display:block;padding:36px 0}.section-head{margin-bottom:25px}.section-head .number{display:none}.section-head h2{margin:0;font-size:1.24rem;display:inline}.section-head .en{display:inline;margin-left:12px;font-size:.89rem}.research-item h3{font-size:1.1rem}.method-note{padding:18px 20px}.publication{grid-template-columns:1fr;gap:8px;margin-bottom:27px;padding-bottom:27px}.pub-year{font-size:.92rem}.pub-title{font-size:1.3rem}.pub-links{gap:20px}.pub-links a{padding:3px 0}.contact-row{display:block}.github-link{display:inline-block;margin-top:15px}.site-footer{font-size:.77rem;flex-wrap:wrap;gap:4px}.site-footer p{width:100%}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+    @media print{.site-header nav,.intro-aside .aside-link,.skip,.site-footer a{display:none}.wrap{max-width:none;padding:0}.intro{padding:25px 0}.section{padding:25px 0;break-inside:avoid}a{color:inherit;text-decoration:none}.site-footer{padding:20px 0}.method-note{background:none}.publication{break-inside:avoid}body{font-size:11pt}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#main" aria-label="Yuanhong Tian home"><span class="brand-mark" aria-hidden="true">Yt.</span><span class="brand-name">Yuanhong Tian</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Papers</a><a href="#education">Education</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <section class="intro" id="about" aria-labelledby="name">
+      <div>
+        <p class="eyebrow">Mathematics</p>
+        <h1 id="name"><span>Yuanhong</span> <span class="surname">Tian</span></h1>
+        <p class="intro-description">I study <em>integrable systems and nonlinear partial differential equations</em>, with a focus on perturbation theory and long-time asymptotics. My joint work with Jiaqi Liu and Gong Chen concerns perturbed nonlinear Schrödinger and modified KdV equations.</p>
+        <p class="intro-footnote">Inverse scattering · Riemann–Hilbert methods · Asymptotic analysis</p>
+      </div>
+      <aside class="intro-aside" aria-label="Research interests">
+        <p class="aside-label">RESEARCH INTERESTS</p>
+        <p class="topic-line" lang="en">Integrable systems</p>
+        <p class="topic-line" lang="en">Nonlinear PDEs</p>
+        <p class="topic-line" lang="en">Long-time asymptotics</p>
+        <a class="aside-link" href="#publications">Selected publications <span aria-hidden="true">↓</span></a>
+      </aside>
+    </section>
+    <section class="section" id="research" aria-labelledby="research-heading">
+      <div class="section-head"><span class="number">01</span><h2 id="research-heading">Research</h2><span class="en">Selected work</span></div>
+      <div class="section-body">
+        <article class="research-item">
+          <p class="item-label" lang="en">NONLINEAR SCHRÖDINGER EQUATION</p>
+          <h3>Localized perturbations of the nonlinear Schrödinger equation</h3>
+          <p>We study the one-dimensional defocusing cubic NLS equation with a localized higher-order nonlinearity. Improved L<sup>∞</sup> bounds and L<sup>p</sup> a priori estimates extend the range of perturbations we can treat and show, under the assumptions of the paper, that the perturbed equation retains the long-time asymptotic behavior of its integrable counterpart.</p>
+          <a class="paper-jump" href="#paper-nls">Letters in Mathematical Physics, 2025 <span aria-hidden="true">↘</span></a>
+        </article>
+        <article class="research-item">
+          <p class="item-label" lang="en">MODIFIED KORTEWEG–DE VRIES EQUATION</p>
+          <h3>Long-time asymptotics for perturbed mKdV</h3>
+          <p>We derive full long-time asymptotics for the modified KdV equation with a higher-order perturbation. The analysis extends the perturbative approach for integrable systems to mKdV, combining inverse scattering, nonlinear steepest descent, and a priori estimates under the stated assumptions on the initial data and perturbation.</p>
+          <a class="paper-jump" href="#paper-mkdv">Journal of Nonlinear Science, 2026 <span aria-hidden="true">↘</span></a>
+        </article>
+        <p class="method-note"><strong>A common theme</strong><br>Understanding which features of integrable dynamics persist under perturbation, through spectral methods and quantitative estimates.</p>
+      </div>
+    </section>
+    <section class="section" id="publications" aria-labelledby="publications-heading">
+      <div class="section-head"><span class="number">02</span><h2 id="publications-heading">Publications</h2><span class="en">Journal articles</span></div>
+      <div class="section-body">
+        <p class="pub-intro">Joint work with Gong Chen and Jiaqi Liu.</p>
+        <article class="publication" id="paper-mkdv">
+          <div class="pub-year">2026</div>
+          <div>
+            <h3 class="pub-title" lang="en"><a href="https://doi.org/10.1007/s00332-026-10262-y">Long-Time Asymptotics of A Perturbed Modified KdV Equation</a></h3>
+            <p class="authors" lang="en">Gong Chen, Jiaqi Liu, <strong>Yuanhong Tian</strong></p>
+            <p class="journal" lang="en"><cite>Journal of Nonlinear Science</cite> <strong>36</strong>, Article 42 (2026).</p>
+            <div class="pub-links"><a href="https://doi.org/10.1007/s00332-026-10262-y">Journal / DOI <span aria-hidden="true">↗</span></a><a href="https://arxiv.org/abs/2504.19800" lang="en">arXiv:2504.19800 <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+        <article class="publication" id="paper-nls">
+          <div class="pub-year">2025</div>
+          <div>
+            <h3 class="pub-title" lang="en"><a href="https://doi.org/10.1007/s11005-025-01984-3">Perturbation of the nonlinear Schrödinger equation by a localized nonlinearity</a></h3>
+            <p class="authors" lang="en">Gong Chen, Jiaqi Liu, <strong>Yuanhong Tian</strong></p>
+            <p class="journal" lang="en"><cite>Letters in Mathematical Physics</cite> <strong>115</strong>, Article 94 (2025).</p>
+            <div class="pub-links"><a href="https://doi.org/10.1007/s11005-025-01984-3">Journal / DOI <span aria-hidden="true">↗</span></a><a href="https://arxiv.org/abs/2508.11463" lang="en">arXiv:2508.11463 <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="section" id="education" aria-labelledby="education-heading">
+      <div class="section-head"><span class="number">03</span><h2 id="education-heading">Education</h2><span class="en">Academic background</span></div>
+      <div class="section-body">
+        <div class="education-item">
+          <div class="education-dates"><time datetime="2023-09">Sep 2023</time> – <time datetime="2026-05">May 2026</time></div>
+          <div><h3>Ph.D. in Pure Mathematics</h3><p>University of Chinese Academy of Sciences</p><p class="supervisor">Supervisor: Jiaqi Liu</p></div>
+        </div>
+        <div class="education-item">
+          <div class="education-dates"><time datetime="2018-09">Sep 2018</time> – <time datetime="2021-06">Jun 2021</time></div>
+          <div><h3>M.Sc. in Theoretical Physics</h3><p>Tianjin University</p></div>
+        </div>
+        <div class="education-item">
+          <div class="education-dates"><time datetime="2014-09">Sep 2014</time> – <time datetime="2018-06">Jun 2018</time></div>
+          <div><h3>B.Sc. in Applied Physics</h3><p>Tianjin University</p></div>
+        </div>
+      </div>
+    </section>
+    <footer class="site-footer"><p>© 2026 Yuanhong Tian</p><p><a href="https://github.com/yuanhongtian">GitHub · @yuanhongtian</a></p></footer>
+  </main>
+</body>
+</html>
